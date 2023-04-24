@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="header">
+  <h2>Determinanți de ordinul 2 și 3</h2>
+  <p>Proprietățile determinanților</p>
+</div>
+
+<div id="navbar">
+  <a href="Teorie.html">Teorie</a>
+  <a href="Exemple.html">Exemple</a>
+  <a href="Exersare.html">Exersare</a>
+  <a href="java:void(0);" class="icon">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="content">
+  <h3>EDUCAȚIE ONLINE FĂRĂ HOTARE 2022-2023</h3>
+  <h5>Instruirea asistată de calculator la orele de matematică, Liceul Teoretic "Dante Alighieri"</h5><br>
+  <h5>Site realizat de:Cîșlari Bianca</h5>
+    <h5>Botnari Alina</h5>
+    <h5>Zosim Patricia</h5>
+    <h5>Cotorobai Selina</h5>
+  </p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

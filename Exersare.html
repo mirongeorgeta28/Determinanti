@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="header">
+  <h2>Determinanți de ordinul 2 și 3</h2>
+  <p>Proprietățile determinanților</p>
+</div>
+
+<div id="navbar">
+  <a href="Teorie.html">Teorie</a>
+  <a href="Exemple.html">Exemple</a>
+  <a href="Exersare.html" class="active">Exersare</a>
+  <a href="java:void(0);" class="icon">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="content">
+  <h3>Exersează și tu!!</h3>
+</div>
+<img src="Images\Picture20.png" width=750px height=500px>
+<img src="Images\Picture21.png" width=750px height=500px>
+<div class="images"><img src="Images\Picture22.png" style="width:50%;"></div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

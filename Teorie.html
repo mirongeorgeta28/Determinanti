@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #fa9624;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #ffb835;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  text-align: center;
+}
+
+.secundar {
+    color: #fa9624;
+    text-align: center;
+}
+.secundar1 {
+    color: #fa9624;
+    text-align: center;
+}
+
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final {
+    color: #fa9624;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+<body>
+
+<div class="header">
+  <h2>Determinanți de ordinul 2 și 3</h2>
+  <p>Proprietățile determinanților</p>
+</div>
+
+<div id="navbar">
+  <a href="Teorie.html" class="active" >Teorie</a>
+  <a href="Exemple.html">Exemple</a>
+  <a href="Exersare.html">Exersare</a>
+  <a href="java:void(0);" class="icon">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="content">
+  <h3>Regulă primară!!!</h3>
+  <h4>Determinanți au doar matricile pătratice (nr linii = nr coloane)</h4>
+</div>
+    <img class="d1" src="Images\Picture2.png" style="width:50%;"><br>
+<div class="secundar">REGULA:elementele diagonalei principale se înmulțesc și din ele se scade produsul elementelor diagonalei secundare.</div><br><br>
+
+    <img class="d1" src="Images\Picture18.jpg" style="width:50%;"><br>
+<div class="secundar1">Se poate aplica sau REGULA TRIUNGHIULUI, prezentată mai sus, sau REGULA LUI SARRUS, prezentată mai jos:</div><br>
+<img class="d1" src="Images\Picture19.png"><div class="content"> Se copiază linia întâi și linia a doua sub determinant.
+Se scad produsele termenilor situați pe diagonala secundară cât și produsele termenilor situați pe paralelele acesteia din suma produșilor elementelor diagonalei principale și a elementelor paralelelor acesteia.</div>
+<br><br><div class="final"><h3>PROPRIETĂȚILE DETERMINANȚILOR</h3></div>
+<p>1°   Determinantul matricei A este egal cu determinantul matricei transpuse A.</p>
+<p>2°   Dacă matricea B se obține din matricea A permutând 2 linii, atunci |𝑩|=−|𝑨|</p>
+<p>3°   Dacă o matrice A are 2 linii egale, atunci determinantul ei este egal cu 0.</p>
+<p>4°   Suma produselor elementelor unei linii a matricei A cu complemenții algebrici respectivi ai elementelor oricărei altei linii este egală cu 0.</p>
+<p>5°   Dacă înmulțim toate elem. unei linii a unei matrice A cu un nr. α, atunci determinantul matricei obtinute A΄ este egal cu produsul dintre α si determinantul matricei A.</p>
+<p>6°   Dacă toate elem. unei linii a unei matrice sunt egale cu 0, atunci determinantul acestei matrice este egal cu 0.</p>
+<p>7°   Dacă o matrice conține 2 linii proporționale, atunci determinantul ei este egal cu 0.</p>
+<p>8°    Dacă la elementele unei linii a matricei A adunam elementele respective ale altei linii inmultite cu unul si acelasi nr nenul α, atunci se obține o matrice al cărei determinant este egal cu determinantul matricei A. </p>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
